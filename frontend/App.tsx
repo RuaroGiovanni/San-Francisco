@@ -4,8 +4,22 @@ import { Hero } from './components/Hero';
 import { DayNav } from './components/DayNav';
 import { Timeline } from './components/Timeline';
 
+const getInitialDayIndex = () => {
+  const today = new Date();
+  // JavaScript Date months are 0-indexed, so 7 is August
+  if (today.getFullYear() === 2026 && today.getMonth() === 7) {
+    const date = today.getDate();
+    // The trip is from August 12th to August 23rd
+    if (date >= 12 && date <= 23) {
+      return date - 12; // 12th is index 0, 13th is index 1, etc.
+    }
+  }
+  // Fallback for days before, after, or in different months/years
+  return 0;
+};
+
 const App: React.FC = () => {
-  const [currentDay, setCurrentDay] = useState(0);
+  const [currentDay, setCurrentDay] = useState<number>(getInitialDayIndex);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
   const handleDaySelect = useCallback((index: number) => {
