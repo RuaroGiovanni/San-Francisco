@@ -30,6 +30,15 @@ const getBadgeStyles = (variant: BadgeVariant) => {
 };
 
 export const Timeline: React.FC<TimelineProps> = ({ day }) => {
+  const handleCardClick = (location?: string) => {
+    if (!location) return;
+    
+    const confirmLeave = window.confirm("Vuoi uscire dall'applicazione per aprire la mappa?");
+    if (confirmLeave) {
+      window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location)}`, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <div className="animate-fade-slide pb-[calc(var(--safe-bottom)+40px)]">
       {/* Day Header */}
@@ -52,6 +61,7 @@ export const Timeline: React.FC<TimelineProps> = ({ day }) => {
       <div className="px-4 max-w-[600px] mx-auto">
         {day.events.map((event, index) => {
           const styles = getTypeStyles(event.type);
+          const isClickable = !!event.location;
 
           return (
             <div key={index} className="flex gap-3 pb-4 relative group">
@@ -63,10 +73,14 @@ export const Timeline: React.FC<TimelineProps> = ({ day }) => {
               </div>
 
               {/* Card */}
-              <div className={`
-                flex-1 relative bg-[var(--sys-bg-secondary)] rounded-[16px] p-4
-                overflow-hidden border border-[rgba(255,255,255,0.03)] z-10
-              `}>
+              <div 
+                onClick={() => handleCardClick(event.location)}
+                className={`
+                  flex-1 relative bg-[var(--sys-bg-secondary)] rounded-[16px] p-4
+                  overflow-hidden border border-[rgba(255,255,255,0.03)] z-10
+                  ${isClickable ? 'cursor-pointer active:scale-[0.98] transition-transform duration-200' : ''}
+                `}
+              >
                 {/* Left Accent Bar */}
                 <div className={`absolute left-0 top-0 bottom-0 w-[3px] ${styles.accent}`} />
 

@@ -12,6 +12,7 @@ export interface TripEvent {
   name: string;
   desc: string;
   badge?: Badge;
+  location?: string;
 }
 
 export interface DayTheme {
