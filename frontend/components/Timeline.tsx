@@ -19,11 +19,11 @@ const getBadgeStyles = (variant: BadgeVariant) => {
   switch (variant) {
     case 'lunch':
     case 'dinner':
-      return 'bg-[rgba(84,84,88,0.4)] text-[var(--sys-orange)]';
+      return 'bg-[var(--sys-fill)] text-[var(--sys-orange)]';
     case 'flight':
-      return 'bg-[rgba(10,132,255,0.2)] text-[var(--sys-teal)]';
+      return 'bg-[rgba(10,132,255,0.15)] text-[var(--sys-teal)]';
     case 'event':
-      return 'bg-[rgba(191,90,242,0.2)] text-[var(--sys-purple)]';
+      return 'bg-[rgba(191,90,242,0.15)] text-[var(--sys-purple)]';
     default:
       return 'bg-[var(--sys-fill)] text-[var(--sys-label)]';
   }
@@ -77,7 +77,7 @@ export const Timeline: React.FC<TimelineProps> = ({ day }) => {
                 onClick={() => handleCardClick(event.location)}
                 className={`
                   flex-1 relative bg-[var(--sys-bg-secondary)] rounded-[16px] p-4
-                  overflow-hidden border border-[rgba(255,255,255,0.03)] z-10
+                  overflow-hidden border border-[var(--sys-card-border)] z-10 transition-colors duration-300
                   ${isClickable ? 'cursor-pointer active:scale-[0.98] transition-transform duration-200' : ''}
                 `}
               >
@@ -104,7 +104,7 @@ export const Timeline: React.FC<TimelineProps> = ({ day }) => {
 
         {/* Day Note */}
         {day.note && (
-          <div className="mt-2 mb-6 bg-[var(--sys-blue-light)] border border-[rgba(10,132,255,0.25)] rounded-[16px] p-4 flex items-start gap-3 ml-[54px]">
+          <div className="mt-2 mb-6 bg-[var(--sys-blue-light)] border border-[rgba(10,132,255,0.25)] rounded-[16px] p-4 flex items-start gap-3 ml-[54px] transition-colors duration-300">
             <span className="text-[18px] leading-none mt-0.5">{day.note.icon}</span>
             <p className="text-[13px] text-[var(--sys-label)] leading-[1.6]">
               {day.note.text}

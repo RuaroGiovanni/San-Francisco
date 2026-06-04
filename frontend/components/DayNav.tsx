@@ -33,7 +33,7 @@ export const DayNav: React.FC<DayNavProps> = ({ days, currentDay, onDaySelect })
   const progressWidth = `${((currentDay + 1) / days.length) * 100}%`;
 
   return (
-    <div className="sticky top-0 z-[100] bg-[rgba(0,0,0,0.85)] backdrop-blur-[24px] backdrop-saturate-[200%] border-b-[0.5px] border-[var(--sys-separator-opaque)]">
+    <div className="sticky top-0 z-[100] bg-[var(--sys-nav-bg)] backdrop-blur-[24px] backdrop-saturate-[200%] border-b-[0.5px] border-[var(--sys-separator-opaque)] transition-colors duration-300">
       <div 
         ref={scrollRef}
         className="flex overflow-x-auto no-scrollbar px-4 py-3 gap-2 snap-x snap-mandatory"
