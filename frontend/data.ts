@@ -35,34 +35,53 @@ export const itineraryData: DayData[] = [
     id: 1,
     date: "13 Agosto",
     weekday: "Giovedì · Giorno 2",
-    theme: { icon: "🌲", text: "Oakland · Natura" },
+    theme: { icon: "🌲", text: "Oakland · Natura & Waterfront" },
     chipLabel: "Gio",
     chipNum: "13",
     events: [
       {
-        time: "09:00",
+        time: "8:30",
         type: "default",
-        name: "Colazione",
-        desc: "Caffè e pasticcini nei pressi dell'hotel."
+        name: "Colazione & partenza per Oakland",
+        desc: "Colazione veloce prima di attraversare la Bay"
       },
       {
-        time: "10:30",
+        time: "9:30",
         type: "highlight",
         name: "Redwood Regional Park",
-        desc: "Passeggiata tra le sequoie giganti a Oakland. Aria fresca e natura."
+        desc: "Trekking leggero tra le sequoie. Sentiero Stream Trail ~5 km, aria fresca, silenzio."
       },
       {
-        time: "13:30",
+        time: "12:30",
         type: "meal",
-        name: "Jack London Square",
-        badge: { label: "🥗 PRANZO", variant: "lunch" },
-        desc: "Pranzo sul lungomare di Oakland con vista sulla baia."
+        name: "Pranzo al sacco nel parco",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Sandwich e frutta preparati in anticipo, tavoli picnic nel parco"
       },
       {
-        time: "16:00",
+        time: "14:30",
         type: "default",
+        name: "Jack London Square",
+        desc: "Passeggiata nel quartiere storico sul waterfront, mercatino e atmosfera portuale"
+      },
+      {
+        time: "18:00",
+        type: "highlight",
         name: "Lake Merritt",
-        desc: "Passeggiata rilassante intorno al lago salato nel cuore di Oakland."
+        desc: "Passeggiata intorno al lago al tramonto, luci sul centro di Oakland"
+      },
+      {
+        time: "19:30",
+        type: "default",
+        name: "Tramonto Embarcadero East Bay",
+        desc: "Vista su SF skyline dall'altra sponda della baia"
+      },
+      {
+        time: "21:00",
+        type: "meal",
+        name: "Cena a casa",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: ""
       }
     ]
   },
@@ -75,30 +94,49 @@ export const itineraryData: DayData[] = [
     chipNum: "14",
     events: [
       {
-        time: "08:30",
+        time: "8:00",
         type: "default",
-        name: "City Tour Mattutino",
-        desc: "Esplorazione del centro città, Union Square e dintorni."
+        name: "Colazione e preparazione",
+        desc: "Prima di un'intensa giornata san franciscana"
       },
       {
-        time: "12:00",
-        type: "meal",
-        name: "Dungeness Crab",
-        badge: { label: "🦀 PRANZO", variant: "lunch" },
-        desc: "Pranzo a base di granchio tipico al Fisherman's Wharf."
-      },
-      {
-        time: "14:30",
+        time: "8:40",
         type: "highlight",
-        name: "Tour di Alcatraz",
-        desc: "Traghetto per l'isola e visita con audioguida della celebre prigione."
+        name: "SF Guided Tour",
+        desc: "Tour guidato della città: Golden Gate, Painted Ladies, panorami principali"
+      },
+      {
+        time: "13:00",
+        type: "meal",
+        name: "Dungeness Crab · Fisherman's Wharf",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Granchi freschi ai chioschi del Wharf. Consigliato: Alioto's o i banchi all'aperto"
+      },
+      {
+        time: "15:50",
+        type: "highlight",
+        name: "Alcatraz",
+        desc: "Ferry + audio tour dell'isola penitenziaria. ~2.5 ore totali incluso tragitto"
+      },
+      {
+        time: "18:30",
+        type: "default",
+        name: "Pier 39",
+        desc: "Leoni marini, vista sulla baia, passeggiata prima della partita"
       },
       {
         time: "19:15",
         type: "event",
-        name: "Partita dei SF Giants",
-        badge: { label: "⚾ EVENTO", variant: "event" },
-        desc: "Serata all'Oracle Park per una partita di baseball MLB."
+        name: "Giants vs Rockies · Oracle Park",
+        badge: { label: "★ EVENTO", variant: "event" },
+        desc: "Hotdog + birra allo stadio. Vista sul McCovey Cove e Bay Bridge."
+      },
+      {
+        time: "22:30",
+        type: "meal",
+        name: "Cena allo stadio o spuntino a casa",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: "Giornata intensa — hotdog allo stadio copre bene"
       }
     ]
   },
@@ -106,34 +144,53 @@ export const itineraryData: DayData[] = [
     id: 3,
     date: "15 Agosto",
     weekday: "Sabato · Giorno 4",
-    theme: { icon: "🚃", text: "Chinatown · North Beach" },
+    theme: { icon: "🚃", text: "Chinatown · North Beach · Cable Car" },
     chipLabel: "Sab",
     chipNum: "15",
     events: [
       {
+        time: "9:00",
+        type: "default",
+        name: "Colazione a North Beach",
+        desc: "Caffè e cornetto da Caffe Trieste o Vesuvio, icone del quartiere Beat"
+      },
+      {
         time: "10:00",
         type: "highlight",
-        name: "Chinatown",
-        desc: "Passeggiata attraverso la Dragon's Gate, visita alla fabbrica dei biscotti della fortuna."
+        name: "Chinatown San Francisco",
+        desc: "Grant Avenue, Dragon Gate, mercati di spezie ed erbe, bakery cinesi"
+      },
+      {
+        time: "11:30",
+        type: "default",
+        name: "North Beach & Coit Tower",
+        desc: "Salire alla torre per la vista panoramica su SF e la baia"
       },
       {
         time: "13:00",
         type: "meal",
-        name: "Dim Sum",
-        badge: { label: "🥟 PRANZO", variant: "lunch" },
-        desc: "Pranzo tradizionale cinese in uno dei locali storici."
+        name: "Street Food Cinese · Chinatown",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Bao, dim sum o noodles dai banchi di Grant Ave o Waverly Place"
       },
       {
-        time: "15:00",
-        type: "default",
-        name: "Coit Tower & North Beach",
-        desc: "Salita alla Coit Tower per la vista panoramica, poi discesa nel quartiere italiano."
-      },
-      {
-        time: "17:30",
+        time: "14:30",
         type: "highlight",
-        name: "Lombard Street & Cable Car",
-        desc: "Discesa della strada più tortuosa del mondo e giro sullo storico tram."
+        name: "Cable Car Ride",
+        desc: "Linea Powell-Hyde: da Market St fino a Fisherman's Wharf. Vista su Alcatraz e Golden Gate"
+      },
+      {
+        time: "15:30",
+        type: "default",
+        name: "Lombard Street",
+        desc: "La strada più tortuosa del mondo, discesa a piedi tra i fiori"
+      },
+      {
+        time: "20:00",
+        type: "meal",
+        name: "Cena a casa",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: ""
       }
     ]
   },
@@ -141,35 +198,53 @@ export const itineraryData: DayData[] = [
     id: 4,
     date: "16 Agosto",
     weekday: "Domenica · Giorno 5",
-    theme: { icon: "🍷", text: "Napa Valley" },
+    theme: { icon: "🍷", text: "Napa Valley · Wine Country" },
     chipLabel: "Dom",
     chipNum: "16",
-    note: { icon: "🚗", text: "Noleggio auto necessario per questa giornata." },
     events: [
       {
-        time: "09:00",
+        time: "7:30",
         type: "default",
         name: "Partenza per Napa",
-        desc: "Viaggio in auto verso nord attraversando il Golden Gate Bridge."
+        desc: "~1h15 di guida, traffico leggero la domenica mattina"
       },
       {
-        time: "11:00",
+        time: "9:00",
         type: "highlight",
-        name: "Degustazione Vini",
-        desc: "Visita a una cantina storica della Napa Valley con degustazione."
+        name: "Napa Downtown",
+        desc: "Passeggiata sul waterfront del Napa River, mercato contadino la domenica mattina"
       },
       {
-        time: "13:30",
+        time: "10:30",
+        type: "highlight",
+        name: "Winery · Napa o Yountville",
+        desc: "Wine tasting tra i filari. Da prenotare: Domaine Carneros (vista) o Robert Mondavi"
+      },
+      {
+        time: "13:00",
         type: "meal",
-        name: "Pranzo a Yountville",
-        badge: { label: "🍷 PRANZO", variant: "lunch" },
-        desc: "Pausa pranzo nella capitale culinaria della valle."
+        name: "Yountville · Bistro Jeanty",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Cucina francese rustica nel cuore di Yountville, la \"food capital\" di Napa"
       },
       {
-        time: "16:00",
+        time: "15:00",
         type: "default",
-        name: "Oxbow Public Market",
-        desc: "Passeggiata nel mercato coperto di Napa per prodotti locali."
+        name: "Seconda winery o passeggiata tra i vigneti",
+        desc: "Oxbow Public Market a Napa per acquisti e assaggi locali"
+      },
+      {
+        time: "17:00",
+        type: "default",
+        name: "Rientro a SF",
+        desc: ""
+      },
+      {
+        time: "20:00",
+        type: "meal",
+        name: "Cena a casa",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: "Con vino acquistato in Napa"
       }
     ]
   },
@@ -177,34 +252,59 @@ export const itineraryData: DayData[] = [
     id: 5,
     date: "17 Agosto",
     weekday: "Lunedì · Giorno 6",
-    theme: { icon: "💻", text: "Silicon Valley" },
+    theme: { icon: "💻", text: "Silicon Valley · Tech Tour" },
     chipLabel: "Lun",
     chipNum: "17",
     events: [
       {
-        time: "10:00",
-        type: "highlight",
-        name: "Apple Park Visitor Center",
-        desc: "Visita al centro visitatori del quartier generale Apple a Cupertino."
+        time: "8:30",
+        type: "default",
+        name: "Partenza per South Bay",
+        desc: "~45 min da SF verso Palo Alto / Cupertino"
       },
       {
-        time: "12:30",
-        type: "default",
-        name: "Computer History Museum",
-        desc: "Tuffo nella storia dell'informatica a Mountain View."
+        time: "9:30",
+        type: "highlight",
+        name: "Stanford University",
+        desc: "Campus tour a piedi: Main Quad, Hoover Tower, Memorial Church. ~1.5h"
+      },
+      {
+        time: "11:30",
+        type: "highlight",
+        name: "Apple Park Visitor Center",
+        desc: "Modello in AR dell'Apple Park, store esclusivo, terrazza con vista sul campus"
+      },
+      {
+        time: "13:00",
+        type: "meal",
+        name: "Meta Caffè (MPK campus)",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Se si riesce ad accedere come ospiti, oppure Philz Coffee a Menlo Park"
       },
       {
         time: "14:30",
-        type: "meal",
-        name: "Pranzo a Palo Alto",
-        badge: { label: "🥗 PRANZO", variant: "lunch" },
-        desc: "Pranzo veloce vicino al campus universitario."
+        type: "highlight",
+        name: "Meta HQ Visit",
+        desc: "Tour quartiere operativo Meta"
       },
       {
-        time: "16:00",
+        time: "16:30",
         type: "highlight",
-        name: "Stanford University",
-        desc: "Passeggiata nel prestigioso campus universitario."
+        name: "Google Visitor Center · Googleplex",
+        desc: "Android statues, bici colorate, campus tour esterno"
+      },
+      {
+        time: "18:00",
+        type: "default",
+        name: "Rientro a SF",
+        desc: ""
+      },
+      {
+        time: "20:00",
+        type: "meal",
+        name: "Cena a casa",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: ""
       }
     ]
   },
@@ -212,35 +312,54 @@ export const itineraryData: DayData[] = [
     id: 6,
     date: "18 Agosto",
     weekday: "Martedì · Giorno 7",
-    theme: { icon: "🌆", text: "LA Day 1" },
+    theme: { icon: "🎬", text: "Los Angeles · Universal Studios" },
     chipLabel: "Mar",
     chipNum: "18",
     events: [
       {
-        time: "07:00",
-        type: "flight",
-        name: "Volo per Los Angeles",
-        badge: { label: "✈ VOLO", variant: "flight" },
-        desc: "Volo mattutino SFO - LAX."
-      },
-      {
-        time: "11:00",
-        type: "highlight",
-        name: "Getty Center",
-        desc: "Visita al museo d'arte con architettura mozzafiato e vista su LA."
-      },
-      {
-        time: "15:00",
+        time: "7:30",
         type: "default",
-        name: "Check-in Hotel LA",
-        desc: "Sistemazione in hotel a West Hollywood."
+        name: "Partenza per SFO",
+        desc: ""
       },
       {
-        time: "19:00",
+        time: "10:15",
+        type: "flight",
+        name: "SFO → LAX",
+        badge: { label: "✈ VOLO", variant: "flight" },
+        desc: "~1h15 di volo"
+      },
+      {
+        time: "12:00",
+        type: "default",
+        name: "Arrivo LAX + transfer",
+        desc: ""
+      },
+      {
+        time: "13:00",
+        type: "highlight",
+        name: "Universal Studios Hollywood",
+        desc: "Wizarding World of Harry Potter, Studio Tour, Jurassic World ride. Pomeriggio completo."
+      },
+      {
+        time: "13:30",
         type: "meal",
-        name: "Sunset Strip",
-        badge: { label: "🍸 CENA", variant: "dinner" },
-        desc: "Cena e passeggiata lungo la celebre via della vita notturna."
+        name: "Universal CityWalk",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Mangiare all'ingresso o dentro il parco"
+      },
+      {
+        time: "20:00",
+        type: "default",
+        name: "Check-in hotel LA",
+        desc: ""
+      },
+      {
+        time: "21:00",
+        type: "meal",
+        name: "In-N-Out Burger · Sunset Strip",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: "Il classico californiano anche a LA, o delivery in hotel"
       }
     ]
   },
@@ -248,34 +367,54 @@ export const itineraryData: DayData[] = [
     id: 7,
     date: "19 Agosto",
     weekday: "Mercoledì · Giorno 8",
-    theme: { icon: "🎬", text: "LA Day 2" },
+    theme: { icon: "🌴", text: "Universal + Santa Monica + Ritorno SF" },
     chipLabel: "Mer",
     chipNum: "19",
     events: [
       {
-        time: "09:30",
+        time: "9:00",
         type: "highlight",
-        name: "Hollywood Walk of Fame",
-        desc: "Passeggiata tra le stelle e foto al TCL Chinese Theatre."
+        name: "Universal Studios · mattina",
+        desc: "Ultime attrazioni, giro finale nel parco"
       },
       {
-        time: "12:30",
+        time: "11:30",
         type: "default",
-        name: "LACMA & Urban Light",
-        desc: "Visita all'installazione artistica dei lampioni."
+        name: "Partenza per Santa Monica",
+        desc: "~40 min in macchina"
       },
       {
-        time: "15:00",
-        type: "highlight",
-        name: "Venice Beach",
-        desc: "Passeggiata sul lungomare eccentrico, Muscle Beach e i canali."
-      },
-      {
-        time: "18:30",
+        time: "13:00",
         type: "meal",
-        name: "Santa Monica Pier",
-        badge: { label: "🎡 CENA", variant: "dinner" },
-        desc: "Tramonto sul molo e cena a base di pesce."
+        name: "Santa Monica Pier · Boardwalk",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Fish tacos o burger sul lungomare. Atmosfera estiva LA"
+      },
+      {
+        time: "14:00",
+        type: "highlight",
+        name: "Giro di LA",
+        desc: "Rodeo Drive, Hollywood Walk of Fame, Griffith Observatory (vista panoramica)"
+      },
+      {
+        time: "17:30",
+        type: "default",
+        name: "Transfer LAX",
+        desc: ""
+      },
+      {
+        time: "19:00",
+        type: "flight",
+        name: "LAX → SFO",
+        badge: { label: "✈ VOLO", variant: "flight" },
+        desc: "Rientro a San Francisco"
+      },
+      {
+        time: "21:00",
+        type: "meal",
+        name: "Cena a casa",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: "Rientro dall'escapade a LA"
       }
     ]
   },
@@ -283,35 +422,60 @@ export const itineraryData: DayData[] = [
     id: 8,
     date: "20 Agosto",
     weekday: "Giovedì · Giorno 9",
-    theme: { icon: "🌁", text: "SF Ritorno" },
+    theme: { icon: "🎨", text: "Mission District · Relax" },
     chipLabel: "Gio",
     chipNum: "20",
     events: [
       {
-        time: "09:00",
-        type: "flight",
-        name: "Volo di ritorno a SF",
-        badge: { label: "✈ VOLO", variant: "flight" },
-        desc: "Rientro a San Francisco in mattinata."
+        time: "9:30",
+        type: "default",
+        name: "Colazione lenta",
+        desc: "Giornata di ritmo tranquillo dopo i giorni intensi"
       },
       {
         time: "13:00",
+        type: "meal",
+        name: "Pranzo a casa",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: ""
+      },
+      {
+        time: "14:30",
         type: "highlight",
-        name: "Haight-Ashbury",
-        desc: "Esplorazione del quartiere hippie, negozi vintage e case vittoriane."
+        name: "Clarion Alley Murales",
+        desc: "Street art storica del Mission, cambia continuamente. ~30 min."
       },
       {
         time: "15:30",
-        type: "default",
-        name: "Painted Ladies",
-        desc: "Relax ad Alamo Square ammirando le celebri case colorate."
+        type: "highlight",
+        name: "The Castro",
+        desc: "Quartiere iconico, Rainbow Honor Walk, architecture vittoriana"
       },
       {
-        time: "19:30",
+        time: "16:00",
         type: "meal",
-        name: "Mission Burrito",
-        badge: { label: "🌯 CENA", variant: "dinner" },
-        desc: "Cena nel Mission District con un autentico e gigantesco burrito."
+        name: "Saigon Sandwich · Banh Mi",
+        badge: { label: "☀ SPUNTINO", variant: "lunch" },
+        desc: "560 Larkin St. Il banh mi più economico e buono della città. ~$5."
+      },
+      {
+        time: "16:30",
+        type: "highlight",
+        name: "Dolores Park",
+        desc: "Relax sull'erba con vista sul downtown. Punto di ritrovo della SF contemporanea."
+      },
+      {
+        time: "17:00",
+        type: "default",
+        name: "Passeggiata libera nel Mission",
+        desc: "Valencia Street per coffee shop e librerie indipendenti"
+      },
+      {
+        time: "19:00",
+        type: "meal",
+        name: "Mission Burrito · La Taqueria",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: "Obbligatorio. Il burrito più famoso di SF, carne asada o carnitas. Cash preferred."
       }
     ]
   },
@@ -319,34 +483,53 @@ export const itineraryData: DayData[] = [
     id: 9,
     date: "21 Agosto",
     weekday: "Venerdì · Giorno 10",
-    theme: { icon: "🌊", text: "Golden Gate Park" },
+    theme: { icon: "🌊", text: "Golden Gate Park · Lands End · Oceano" },
     chipLabel: "Ven",
     chipNum: "21",
     events: [
       {
-        time: "10:00",
+        time: "9:00",
         type: "highlight",
-        name: "Japanese Tea Garden",
-        desc: "Passeggiata rilassante nel giardino giapponese più antico degli USA."
+        name: "Golden Gate Park · Japanese Tea Garden",
+        desc: "Apertura alle 9. Pausa tè verde e wagashi nel giardino giapponese più antico degli USA."
       },
       {
-        time: "12:00",
-        type: "default",
+        time: "10:30",
+        type: "highlight",
         name: "California Academy of Sciences",
-        desc: "Visita al museo di storia naturale con acquario e foresta pluviale."
+        desc: "Planetario, foresta pluviale, acquario tropicale e tetto vivente"
       },
       {
-        time: "15:30",
-        type: "highlight",
-        name: "Lands End",
-        desc: "Trekking costiero con viste spettacolari sul Golden Gate e rovine dei Sutro Baths."
-      },
-      {
-        time: "19:00",
+        time: "13:00",
         type: "meal",
-        name: "Cena a Richmond District",
-        badge: { label: "🍜 CENA", variant: "dinner" },
-        desc: "Cena asiatica in uno dei migliori quartieri per il cibo etnico."
+        name: "Outerlands · Inner Sunset",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Locale rustico e artigianale vicino all'oceano. Ottimi sandwich e zuppa. Molto amato dai locals."
+      },
+      {
+        time: "14:30",
+        type: "highlight",
+        name: "Ocean Beach & Lands End Trail",
+        desc: "Sentiero panoramico sul Pacifico, rovine del Sutro Baths, vista sul Golden Gate"
+      },
+      {
+        time: "16:30",
+        type: "highlight",
+        name: "Sutro Baths & Marshall's Beach",
+        desc: "Rovine dell'antico stabilimento balneare + la spiaggia nascosta sotto il Golden Gate"
+      },
+      {
+        time: "18:30",
+        type: "default",
+        name: "Tramonto dal Lands End Lookout",
+        desc: "Una delle migliori viste sul Golden Gate al tramonto"
+      },
+      {
+        time: "20:30",
+        type: "meal",
+        name: "Cena a casa",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: ""
       }
     ]
   },
@@ -354,34 +537,59 @@ export const itineraryData: DayData[] = [
     id: 10,
     date: "22 Agosto",
     weekday: "Sabato · Giorno 11",
-    theme: { icon: "🌉", text: "Muir Woods · Sausalito" },
+    theme: { icon: "🌉", text: "Muir Woods · Sausalito · Golden Gate" },
     chipLabel: "Sab",
     chipNum: "22",
     events: [
       {
-        time: "09:00",
-        type: "highlight",
-        name: "Muir Woods",
-        desc: "Mattinata immersi nella foresta di sequoie costiere (prenotazione obbligatoria)."
-      },
-      {
-        time: "12:30",
+        time: "8:00",
         type: "default",
-        name: "Marin Headlands",
-        desc: "Punti panoramici mozzafiato per fotografare il ponte dall'alto."
+        name: "Partenza per Muir Woods",
+        desc: "~40 min da SF. Prenotazione parcheggio obbligatoria."
       },
       {
-        time: "14:00",
-        type: "meal",
-        name: "Sausalito",
-        badge: { label: "🍔 PRANZO", variant: "lunch" },
-        desc: "Pranzo nella pittoresca cittadina sul mare e passeggiata tra le houseboats."
-      },
-      {
-        time: "17:00",
+        time: "9:00",
         type: "highlight",
-        name: "Golden Gate Bridge",
-        desc: "Attraversamento del ponte a piedi o in bici al tramonto."
+        name: "Muir Woods National Monument",
+        desc: "Foresta di sequoie costiere millenarie. Main Trail + Bohemian Loop (~2h). Silenzio assoluto."
+      },
+      {
+        time: "11:30",
+        type: "default",
+        name: "Marin Headlands · Vista panoramica",
+        desc: "Il punto con la vista più iconica su SF e Golden Gate. Tappa obbligatoria per foto."
+      },
+      {
+        time: "13:00",
+        type: "meal",
+        name: "Sausalito · Bar Bocce",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Sul waterfront con vista sulla baia. Ottima pizza e pesce. Atmosfera da borgo marinaro italiano."
+      },
+      {
+        time: "15:00",
+        type: "default",
+        name: "Passeggiata a Sausalito",
+        desc: "Gallerie d'arte, case galleggianti, gelato sul molo"
+      },
+      {
+        time: "16:30",
+        type: "highlight",
+        name: "Rientro con vista Golden Gate",
+        desc: "Attraversare il Golden Gate Bridge in macchina con sosta al vista point"
+      },
+      {
+        time: "18:00",
+        type: "default",
+        name: "Aperitivo e ultima passeggiata a SF",
+        desc: "Ultimo giro in città prima della partenza"
+      },
+      {
+        time: "20:30",
+        type: "meal",
+        name: "Cena a casa · Ultima notte a SF",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: "Cena con tutto quello che è rimasto, brindisi alla California"
       }
     ]
   },
@@ -392,26 +600,26 @@ export const itineraryData: DayData[] = [
     theme: { icon: "✈", text: "Partenza · SFO" },
     chipLabel: "Dom",
     chipNum: "23",
+    note: { icon: "🗺", text: "12 giorni · San Francisco, Oakland, Napa, Silicon Valley, Los Angeles, Muir Woods, Sausalito. Un viaggio completo tra natura, città, tech e cultura californiana." },
     events: [
       {
-        time: "09:00",
-        type: "meal",
-        name: "Ultima Colazione",
-        badge: { label: "🥞 COLAZIONE", variant: "lunch" },
-        desc: "Pancakes e sciroppo d'acero per salutare l'America."
+        time: "8:00",
+        type: "default",
+        name: "Ultimi bagagli & colazione",
+        desc: "Colazione tranquilla nell'ultima mattina californiana"
       },
       {
-        time: "11:00",
+        time: "11:30",
         type: "default",
-        name: "Shopping Last Minute",
-        desc: "Acquisto degli ultimi souvenir a Union Square."
+        name: "Partenza per SFO",
+        desc: "~30 min di transfer"
       },
       {
         time: "14:00",
         type: "flight",
-        name: "Partenza da SFO",
+        name: "SFO — Partenza",
         badge: { label: "✈ VOLO", variant: "flight" },
-        desc: "Arrivo in aeroporto, check-in e volo di rientro in Italia."
+        desc: "Arrivederci, California."
       }
     ]
   }
