@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { itineraryData } from './data';
 import { Hero } from './components/Hero';
 import { DayNav } from './components/DayNav';
@@ -18,9 +18,63 @@ const getInitialDayIndex = () => {
   return 0;
 };
 
+const getInitialTheme = (): 'dark' | 'light' => {
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    // Check system preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      return 'light';
+    }
+  }
+  // Fallback to time-based if matchMedia is unavailable
+  const hour = new Date().getHours();
+  // Dark mode from 6 PM to 6 AM
+  return (hour >= 18 || hour < 6) ? 'dark' : 'light';
+};
+
 const App: React.FC = () => {
   const [currentDay, setCurrentDay] = useState<number>(getInitialDayIndex);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [theme, setTheme] = useState<'dark' | 'light'>(getInitialTheme);
+
+  // Listen for system theme changes
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    const handleChange = (e: MediaQueryListEvent) => {
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+
+    // Modern browsers
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', handleChange);
+      return () => mediaQuery.removeEventListener('change', handleChange);
+    } 
+    // Older browsers fallback
+    else if ('addListener' in mediaQuery) {
+      // @ts-ignore
+      mediaQuery.addListener(handleChange);
+      // @ts-ignore
+      return () => mediaQuery.removeListener(handleChange);
+    }
+  }, []);
+
+  // Apply theme class to document
+  useEffect(() => {
+    if (theme === 'light') {
+      document.documentElement.classList.add('light');
+    } else {
+      document.documentElement.classList.remove('light');
+    }
+  }, [theme]);
+
+  const toggleTheme = useCallback(() => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+  }, []);
 
   const handleDaySelect = useCallback((index: number) => {
     setCurrentDay(index);
@@ -56,8 +110,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--sys-bg)] text-[var(--sys-label)]">
-      <Hero />
+    <div className="min-h-screen bg-[var(--sys-bg)] text-[var(--sys-label)] transition-colors duration-300">
+      <Hero theme={theme} onToggleTheme={toggleTheme} />
       
       <div id="day-nav-wrapper">
         <DayNav 
