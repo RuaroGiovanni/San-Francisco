@@ -3,6 +3,7 @@ import { itineraryData } from './data';
 import { Hero } from './components/Hero';
 import { DayNav } from './components/DayNav';
 import { Timeline } from './components/Timeline';
+import { LoginGate } from './components/LoginGate';
 
 const getInitialDayIndex = () => {
   const today = new Date();
@@ -35,9 +36,17 @@ const getInitialTheme = (): 'dark' | 'light' => {
 };
 
 const App: React.FC = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    return localStorage.getItem('sf_trip_authenticated') === 'true';
+  });
   const [currentDay, setCurrentDay] = useState<number>(getInitialDayIndex);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [theme, setTheme] = useState<'dark' | 'light'>(getInitialTheme);
+
+  const handleLoginSuccess = useCallback(() => {
+    localStorage.setItem('sf_trip_authenticated', 'true');
+    setIsAuthenticated(true);
+  }, []);
 
   // Listen for system theme changes
   useEffect(() => {
@@ -108,6 +117,10 @@ const App: React.FC = () => {
     }
     setTouchStartX(null);
   };
+
+  if (!isAuthenticated) {
+    return <LoginGate onSuccess={handleLoginSuccess} />;
+  }
 
   return (
     <div className="min-h-screen bg-[var(--sys-bg)] text-[var(--sys-label)] transition-colors duration-300">
