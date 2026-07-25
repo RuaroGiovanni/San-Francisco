@@ -97,6 +97,23 @@ export const Timeline: React.FC<TimelineProps> = ({ day }) => {
                 <p className="text-[14px] text-[var(--sys-label-secondary)] leading-[1.4]">
                   {event.desc}
                 </p>
+                {event.todos && event.todos.length > 0 && (
+                  <div className="mt-3 pt-3 border-t border-[var(--sys-card-border)]">
+                    <p className="text-[11px] font-bold uppercase tracking-wide text-[var(--sys-label-secondary)] mb-1.5">
+                      TODO
+                    </p>
+                    <ul className="space-y-1">
+                      {event.todos.map((todo, todoIndex) => (
+                        <li
+                          key={todoIndex}
+                          className="text-[13px] text-[var(--sys-label)] leading-[1.35]"
+                        >
+                          • {todo}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
           );

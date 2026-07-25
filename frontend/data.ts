@@ -163,6 +163,7 @@ export const itineraryData: DayData[] = [
         type: "highlight",
         name: "Beringer Legacy Cave Tour",
         desc: "Morning tasting experience at Beringer with the Legacy Cave Tour (reserve ahead).",
+        todos: ["Reserve Beringer Legacy Cave Tour"],
         location: "Beringer Vineyards, St. Helena, CA"
       },
       {
@@ -210,6 +211,7 @@ export const itineraryData: DayData[] = [
         type: "highlight",
         name: "Muir Woods",
         desc: "Early into the redwoods at Muir Woods (book parking early slot & download pass first!).",
+        todos: ["Reserve parking", "Buy tickets"],
         location: "Muir Woods National Monument, CA"
       },
       {
@@ -285,6 +287,7 @@ export const itineraryData: DayData[] = [
         type: "default",
         name: "Settle in near Universal",
         desc: "Check-in to hotel near Universal Studios in LA.",
+        todos: ["Reserve hotel"],
         location: "Universal City, Los Angeles, CA"
       }
     ]
@@ -307,10 +310,11 @@ export const itineraryData: DayData[] = [
       {
         time: "19:30",
         type: "meal",
-        name: "Musso & Frank Grill",
+        name: "TBD restaurant for dinner",
         badge: { label: "🌙 CENA", variant: "dinner" },
-        desc: "Birthday dinner at Musso & Frank Grill in Hollywood — old-Hollywood glamour, martinis, and steaks since 1919.",
-        location: "Musso & Frank Grill, Hollywood, CA"
+        desc: "Dinner at a TBD restaurant.",
+        todos: ["Reserve restaurant"],
+        location: "Los Angeles, CA"
       }
     ]
   },
@@ -376,7 +380,7 @@ export const itineraryData: DayData[] = [
         location: "Aquarium of the Bay, Pier 39, San Francisco, CA"
       },
       {
-        time: "17:00",
+        time: "18:30",
         type: "highlight",
         name: "San Francisco Bay Cruise",
         desc: "1-hour Golden Gate & Bay Cruise departing from Pier 39 / Fisherman's Wharf. Sail under the Golden Gate Bridge and past Alcatraz at sunset.",
@@ -450,6 +454,7 @@ export const itineraryData: DayData[] = [
         type: "highlight",
         name: "Japanese Tea Garden",
         desc: "Green tea and calm walk in the oldest Japanese garden in the US.",
+        todos: ["Reserve tickets"],
         location: "Japanese Tea Garden, Golden Gate Park, San Francisco, CA"
       },
       {
@@ -480,7 +485,8 @@ export const itineraryData: DayData[] = [
         name: "House of Prime Rib",
         badge: { label: "🌙 CENA", variant: "dinner" },
         desc: "Farewell dinner at House of Prime Rib (books up months ahead).",
-        location: "House of Prime Rib, San Francisco, CA"
+        location: "House of Prime Rib, San Francisco, CA",
+        todos: ["Reserve restaurant"],
       }
     ]
   },

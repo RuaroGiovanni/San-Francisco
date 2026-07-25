@@ -11,6 +11,7 @@ export interface TripEvent {
   type: EventType;
   name: string;
   desc: string;
+  todos?: string[];
   badge?: Badge;
   location?: string;
 }
