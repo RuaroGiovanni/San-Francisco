@@ -33,8 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ theme, onToggleTheme }) => {
         )}
       </button>
 
-      {/* Radial Gradient Mesh Background */}
-      <div className="absolute top-[-20%] right-[-10%] w-[80vw] h-[80vw] max-w-[500px] max-h-[500px] rounded-full bg-[var(--sys-blue)] opacity-15 blur-[60px] md:blur-[80px] pointer-events-none"></div>
+
       
       <div className="relative z-10 max-w-[600px] mx-auto w-full">
         <p className="text-[13px] text-[var(--sys-blue)] uppercase tracking-[0.05em] font-bold mb-2 flex items-center gap-1">
