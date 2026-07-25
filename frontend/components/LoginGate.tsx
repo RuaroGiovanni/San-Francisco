@@ -14,7 +14,7 @@ export const LoginGate: React.FC<LoginGateProps> = ({ onSuccess }) => {
       setPin(nextPin);
       setError(false);
       if (nextPin.length === 4) {
-        if (nextPin === '0000') {
+        if (nextPin === '1317') {
           setTimeout(() => {
             onSuccess();
           }, 150);

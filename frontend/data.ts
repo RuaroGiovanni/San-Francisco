@@ -114,10 +114,10 @@ export const itineraryData: DayData[] = [
       {
         time: "12:30",
         type: "meal",
-        name: "Ferry Building",
+        name: "Freestyle lunch",
         badge: { label: "☀ PRANZO", variant: "lunch" },
-        desc: "Lunch at the Ferry Building — Hog Island oysters and a Boudin clam-chowder bread bowl.",
-        location: "Ferry Building, San Francisco, CA"
+        desc: "Freestyle lunch, decided at the moment.",
+        location: "San Francisco, CA"
       },
       {
         time: "14:30",
@@ -147,7 +147,7 @@ export const itineraryData: DayData[] = [
     id: 3,
     date: "15 Agosto",
     weekday: "Sabato · Giorno 4",
-    theme: { icon: "🍷", text: "Napa Valley" },
+    theme: { icon: "🍷", text: "Napa Morning + Seaside" },
     chipLabel: "Sab",
     chipNum: "15",
     events: [
@@ -155,30 +155,45 @@ export const itineraryData: DayData[] = [
         time: "08:30",
         type: "default",
         name: "Head out early to Napa",
-        desc: "Head out early towards Napa Valley.",
+        desc: "Morning drive to Napa Valley.",
         location: "Napa Valley, CA"
       },
       {
         time: "09:30",
         type: "highlight",
+        name: "Beringer Legacy Cave Tour",
+        desc: "Morning tasting experience at Beringer with the Legacy Cave Tour (reserve ahead).",
+        location: "Beringer Vineyards, St. Helena, CA"
+      },
+      {
+        time: "11:45",
+        type: "highlight",
         name: "Oxbow Public Market",
-        desc: "Explore Oxbow Public Market in Napa.",
+        desc: "Late-morning stop at Oxbow Market for a freestyle bite.",
         location: "Oxbow Public Market, Napa, CA"
       },
       {
-        time: "11:00",
-        type: "highlight",
-        name: "Napa Wineries",
-        desc: "A couple of wineries in Napa Valley (Reserve ahead).",
-        location: "Napa Valley, CA"
+        time: "12:30",
+        type: "meal",
+        name: "Lunch at Gott's Roadside",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Lunch stop at Gott's Roadside for a burger.",
+        location: "Gott's Roadside, Napa, CA"
       },
       {
-        time: "13:30",
+        time: "16:30",
+        type: "default",
+        name: "Seaside afternoon (optional)",
+        desc: "Maybe spend the afternoon by the sea before heading back home.",
+        location: "Pacific coast, Bay Area, CA"
+      },
+      {
+        time: "20:00",
         type: "meal",
-        name: "Lunch in Yountville",
-        badge: { label: "☀ PRANZO", variant: "lunch" },
-        desc: "Lunch in Yountville (Bouchon Bakery, or Gott's Roadside for burgers and shakes).",
-        location: "Yountville, CA"
+        name: "Steak dinner at home",
+        badge: { label: "🌙 CENA", variant: "dinner" },
+        desc: "Dinner at home with steak.",
+        location: "San Francisco, CA"
       }
     ]
   },
@@ -191,19 +206,26 @@ export const itineraryData: DayData[] = [
     chipNum: "16",
     events: [
       {
-        time: "08:30",
+        time: "10:30",
         type: "highlight",
         name: "Muir Woods",
         desc: "Early into the redwoods at Muir Woods (book parking early slot & download pass first!).",
         location: "Muir Woods National Monument, CA"
       },
       {
-        time: "12:30",
+        time: "13:00",
         type: "meal",
-        name: "Lunch in Sausalito at Fish.",
+        name: "Packed lunch",
         badge: { label: "☀ PRANZO", variant: "lunch" },
-        desc: "Order at the counter and eat on the water (crab roll, fish tacos, clam chowder).",
-        location: "Fish., Sausalito, CA"
+        desc: "Packed lunch break during the day out.",
+        location: "Sausalito, CA"
+      },
+      {
+        time: "14:00",
+        type: "highlight",
+        name: "Sausalito tour",
+        desc: "Scenic walk through Sausalito waterfront, downtown galleries, and harbor views.",
+        location: "Sausalito, CA"
       },
       {
         time: "15:00",
@@ -380,17 +402,31 @@ export const itineraryData: DayData[] = [
       {
         time: "12:00",
         type: "highlight",
-        name: "Apple Park Visitor Center & Meta Sign",
-        desc: "The Apple Park Visitor Center (rooftop terrace, AR model, café), and a photo at the Meta sign.",
+        name: "Meta HQ",
+        desc: "Meta headquarters in Menlo Park — take photos at the Meta sign.",
+        location: "Meta HQ, Menlo Park, CA"
+      },
+      {
+        time: "13:00",
+        type: "meal",
+        name: "Lunch at Meta HQ",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Lunch stop at Meta HQ, with time for photos at the Meta sign.",
+        location: "Meta HQ, Menlo Park, CA"
+      },
+      {
+        time: "14:00",
+        type: "highlight",
+        name: "Apple Park Visitor Center",
+        desc: "Stop at Apple Park Visitor Center (rooftop terrace, AR model, and cafe).",
         location: "Apple Park Visitor Center, Cupertino, CA"
       },
       {
-        time: "13:30",
-        type: "meal",
-        name: "Lunch in Palo Alto or Mountain View",
-        badge: { label: "☀ PRANZO", variant: "lunch" },
-        desc: "Lunch in Palo Alto or Mountain View.",
-        location: "Palo Alto, CA"
+        time: "15:00",
+        type: "highlight",
+        name: "Googleplex",
+        desc: "Visit Google campus areas and the Android lawn statues.",
+        location: "Googleplex, Mountain View, CA"
       }
     ]
   },
