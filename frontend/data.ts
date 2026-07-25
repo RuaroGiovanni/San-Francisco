@@ -36,19 +36,26 @@ export const itineraryData: DayData[] = [
     chipNum: "13",
     events: [
       {
-        time: "09:30",
-        type: "highlight",
-        name: "Lake Merritt & Piedmont Ave",
-        desc: "A loop around Lake Merritt, the cafés on Piedmont Ave, and lunch by the water.",
-        location: "Lake Merritt, Oakland, CA"
+        time: "10:00",
+        type: "default",
+        name: "Slow morning & relax",
+        desc: "Lazy morning after arrival, coffee and rest at home.",
+        location: "San Francisco, CA"
       },
       {
         time: "13:00",
         type: "meal",
-        name: "Lunch by the water",
+        name: "Lunch at home",
         badge: { label: "☀ PRANZO", variant: "lunch" },
-        desc: "Lunch by the water in Oakland.",
-        location: "Oakland Waterfront, Oakland, CA"
+        desc: "Relaxed lunch at home before heading out to Oakland.",
+        location: "San Francisco, CA"
+      },
+      {
+        time: "15:00",
+        type: "highlight",
+        name: "Oakland & Lake Merritt",
+        desc: "Piedmont Ave cafés and a afternoon loop walk around Lake Merritt.",
+        location: "Lake Merritt, Oakland, CA"
       },
       {
         time: "19:00",
