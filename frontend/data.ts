@@ -53,20 +53,41 @@ export const itineraryData: DayData[] = [
       {
         time: "15:00",
         type: "highlight",
-        name: "Oakland & Lake Merritt",
-        desc: "Piedmont Ave cafés and a afternoon loop walk around Lake Merritt.",
+        name: "Piedmont Ave stroll",
+        desc: "Afternoon on Piedmont Ave with cafes, bookstores, and neighborhood browsing.",
+        location: "Piedmont Ave, Oakland, CA"
+      },
+      {
+        time: "16:30",
+        type: "default",
+        name: "Mountain View Cemetery",
+        desc: "Walk through Oakland's historic cemetery with hillside views.",
+        location: "Mountain View Cemetery, Oakland, CA"
+      },
+      {
+        time: "17:30",
+        type: "default",
+        name: "Morcom Rose Garden",
+        desc: "Quick stop at the rose garden before heading to the lake for sunset.",
+        location: "Morcom Rose Garden, Oakland, CA"
+      },
+      {
+        time: "19:45",
+        type: "highlight",
+        name: "Lake Merritt at sunset",
+        desc: "Sunset-hour walk around Lake Merritt with skyline reflections.",
         location: "Lake Merritt, Oakland, CA"
       },
       {
-        time: "19:00",
+        time: "20:45",
         type: "meal",
-        name: "Everett & Jones BBQ",
+        name: "Dinner at home",
         badge: { label: "🌙 CENA", variant: "dinner" },
-        desc: "Dinner at Everett & Jones BBQ in Jack London Square.",
+        desc: "Spend some quality time at home and have dinner before heading out for the evening.",
         location: "Everett & Jones BBQ, Jack London Square, Oakland, CA"
       },
       {
-        time: "20:30",
+        time: "22:00",
         type: "meal",
         name: "Fenton's Creamery",
         badge: { label: "🌙 CENA", variant: "dinner" },
