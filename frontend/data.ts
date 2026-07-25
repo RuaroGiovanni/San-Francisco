@@ -183,6 +183,20 @@ export const itineraryData: DayData[] = [
         name: "Marin Headlands",
         desc: "Stop at the Marin Headlands for the classic Golden Gate Bridge view.",
         location: "Marin Headlands, CA"
+      },
+      {
+        time: "16:30",
+        type: "highlight",
+        name: "Golden Gate Overlook",
+        desc: "Spectacular viewpoint framed by cypress trees over the Golden Gate Bridge.",
+        location: "Golden Gate Overlook, San Francisco, CA"
+      },
+      {
+        time: "17:30",
+        type: "highlight",
+        name: "Palace of Fine Arts",
+        desc: "Iconic Greco-Roman style rotunda and lagoon in the Marina district.",
+        location: "Palace of Fine Arts, San Francisco, CA"
       }
     ]
   },
