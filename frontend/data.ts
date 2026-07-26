@@ -120,7 +120,7 @@ export const itineraryData: DayData[] = [
         location: "San Francisco, CA"
       },
       {
-        time: "14:30",
+        time: "14:15",
         type: "highlight",
         name: "Alcatraz Boat Tour",
         desc: "Afternoon boat to Alcatraz (about 2.5–3 hours). Ferry + audio tour of the island.",
@@ -132,6 +132,13 @@ export const itineraryData: DayData[] = [
         name: "Walk on Pier 39",
         desc: "Sea lions, waterfront views, and a walk on Pier 39 before heading to Oracle Park.",
         location: "Pier 39, San Francisco, CA"
+      },
+      {
+        time: "18:00",
+        type: "default",
+        name: "Embarcadero walk & Ferry Building Marketplace",
+        desc: "Evening walk along the Embarcadero to the Ferry Building Marketplace for a quick bite or snack before the game.",
+        location: "Ferry Building Marketplace, San Francisco, CA"
       },
       {
         time: "19:15",
@@ -304,7 +311,22 @@ export const itineraryData: DayData[] = [
         time: "09:00",
         type: "highlight",
         name: "Universal Studios Hollywood",
-        desc: "Super Nintendo World and Mario Kart first, then the Studio Tour, the Wizarding World, and the new Fast & Furious coaster. (Express Pass is worth it.)",
+        desc: "Super Nintendo World and Mario Kart first, then the Studio Tour, the Wizarding World, and the new Fast & Furious coaster.",
+        location: "Universal Studios Hollywood, Los Angeles, CA"
+      },
+      {
+        time: "11:30",
+        type: "meal",
+        name: "Three Broomsticks at Universal",
+        badge: { label: "☀ PRANZO", variant: "lunch" },
+        desc: "Lunch at the Three Broomsticks in Universal Studios for a birthday treat.",
+        location: "Three Broomsticks, Universal Studios Hollywood, Los Angeles, CA"
+      },
+      {
+        time: "13:00",
+        type: "highlight",
+        name: "Universal Studios Hollywood",
+        desc: "Continue exploring Universal Studios Hollywood, including rides, shows, and attractions.",
         location: "Universal Studios Hollywood, Los Angeles, CA"
       },
       {
@@ -352,31 +374,73 @@ export const itineraryData: DayData[] = [
     events: [
       {
         time: "09:00",
-        type: "default",
-        name: "Tartine Bakery",
-        desc: "Start the day with a Tartine morning bun.",
+        type: "meal",
+        name: "Breakfast at Tartine Bakery",
+        desc: "09:00-09:45 · Morning bun, coffee, and browse the bakery.",
         location: "Tartine Bakery, San Francisco, CA"
       },
       {
-        time: "10:00",
+        time: "09:45",
         type: "highlight",
-        name: "Clarion Alley Murals, Dolores Park & The Castro",
-        desc: "Clarion Alley murals, Dolores Park, and the Castro.",
-        location: "Mission District, San Francisco, CA"
+        name: "Mission Dolores Park",
+        desc: "09:45-10:10 · Walk up to the hill for one of the best skyline views of San Francisco.",
+        location: "Mission Dolores Park, San Francisco, CA"
+      },
+      {
+        time: "10:10",
+        type: "highlight",
+        name: "Mission Dolores",
+        desc: "10:10-10:35 · Visit California's oldest surviving building (1776) and its peaceful cemetery.",
+        location: "Mission Dolores, San Francisco, CA"
+      },
+      {
+        time: "10:35",
+        type: "highlight",
+        name: "Clarion Alley",
+        desc: "10:35-11:00 · Explore the murals and read the stories behind them.",
+        location: "Clarion Alley, San Francisco, CA"
+      },
+      {
+        time: "11:00",
+        type: "default",
+        name: "Valencia Street",
+        desc: "11:00-11:40 · Browse independent boutiques, Paxton Gate, Dog Eared Books, and 826 Valencia. Optional quick espresso at Four Barrel Coffee.",
+        location: "Valencia Street, San Francisco, CA"
+      },
+      {
+        time: "11:40",
+        type: "default",
+        name: "Join the line at La Taqueria",
+        desc: "Ideal arrival time. Expect a 45-60 minute wait; the line moves steadily and is part of the experience.",
+        location: "La Taqueria, San Francisco, CA"
       },
       {
         time: "12:30",
         type: "meal",
-        name: "La Taqueria & Bi-Rite Ice Cream",
+        name: "Lunch at La Taqueria",
         badge: { label: "☀ PRANZO", variant: "lunch" },
-        desc: "The mandatory La Taqueria burrito and Bi-Rite ice cream.",
+        desc: "12:30-13:00 · Order the legendary Carne Asada burrito or carnitas.",
         location: "La Taqueria, San Francisco, CA"
+      },
+      {
+        time: "13:00",
+        type: "meal",
+        name: "Bi-Rite Creamery",
+        desc: "13:00-13:20 · A short walk away. Salted Caramel is the classic choice.",
+        location: "Bi-Rite Creamery, San Francisco, CA"
+      },
+      {
+        time: "13:20",
+        type: "default",
+        name: "Travel to Pier 39",
+        desc: "13:20-14:00 · Take BART + F-Line streetcar or Uber/Lyft (about 20-25 min depending on traffic), with buffer before the Aquarium.",
+        location: "Pier 39, San Francisco, CA"
       },
       {
         time: "15:00",
         type: "highlight",
         name: "Aquarium of the Bay (Pier 39)",
-        desc: "Visit the Aquarium of the Bay right at Pier 39 — walk through clear underwater tunnels surrounded by sharks, rays, and local Bay sea life.",
+        desc: "Plenty of time to arrive without rushing. Walk through clear underwater tunnels surrounded by sharks, rays, and local Bay sea life.",
         location: "Aquarium of the Bay, Pier 39, San Francisco, CA"
       },
       {
@@ -454,7 +518,7 @@ export const itineraryData: DayData[] = [
         type: "highlight",
         name: "Japanese Tea Garden",
         desc: "Green tea and calm walk in the oldest Japanese garden in the US.",
-        todos: ["Reserve tickets"],
+        todos: ["Buy tickets"],
         location: "Japanese Tea Garden, Golden Gate Park, San Francisco, CA"
       },
       {
@@ -465,12 +529,19 @@ export const itineraryData: DayData[] = [
         location: "Bison Paddock, Golden Gate Park, San Francisco, CA"
       },
       {
-        time: "13:15",
+        time: "13:00",
         type: "meal",
         name: "Lunch near Golden Gate Park",
         badge: { label: "☀ PRANZO", variant: "lunch" },
         desc: "Casual lunch at a café or spot near Golden Gate Park.",
         location: "Golden Gate Park, San Francisco, CA"
+      },
+      {
+        time: "14:00",
+        type: "meal",
+        name: "Matcha & Coffee Break",
+        desc: "Enjoy a matcha tea and coffee break at Constance Tea & Matcha, a cozy spot near Golden Gate Park.",
+        location: "Constance Tea & Matcha, San Francisco, CA"
       },
       {
         time: "14:30",
@@ -482,9 +553,9 @@ export const itineraryData: DayData[] = [
       {
         time: "19:30",
         type: "meal",
-        name: "House of Prime Rib",
+        name: "Farewell dinner",
         badge: { label: "🌙 CENA", variant: "dinner" },
-        desc: "Farewell dinner at House of Prime Rib (books up months ahead).",
+        desc: "Farewell dinner, restaurant TBD",
         location: "House of Prime Rib, San Francisco, CA",
         todos: ["Reserve restaurant"],
       }
