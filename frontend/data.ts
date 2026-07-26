@@ -356,7 +356,23 @@ export const itineraryData: DayData[] = [
         location: "Santa Monica Pier, Santa Monica, CA"
       },
       {
+        time: "10:00",
+        type: "event",
+        name: "The Odyssey",
+        badge: { label: "★ EVENTO", variant: "event" },
+        desc: "Watch The Odyssey at the TCL Chinese Theatre in Hollywood.",
+        location: "TCL Chinese Theatre, Hollywood, Los Angeles, CA"
+      },
+      
+      {
         time: "13:00",
+        type: "default",
+        name: "Walk along the Hollywood Walk of Fame",
+        desc: "Stroll along the Hollywood Walk of Fame and see the famous stars on the sidewalk.",
+        location: "Hollywood Blvd, Los Angeles, CA"
+      },
+      {
+        time: "14:00",
         type: "default",
         name: "Drive back to SF",
         desc: "Drive back to the Bay Area.",
