@@ -294,7 +294,6 @@ export const itineraryData: DayData[] = [
         type: "default",
         name: "Settle in near Universal",
         desc: "Check-in to hotel near Universal Studios in LA.",
-        todos: ["Reserve hotel"],
         location: "Universal City, Los Angeles, CA"
       }
     ]
